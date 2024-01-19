@@ -2,6 +2,9 @@
 
 This sample project shows the setup for the foreground service. The service in this sample project is a foreground service to request location.
 The permission for <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" /> is depend of the foreground service type.
+The communication between Android Native with Flutter, I used channel (check the references). 
+But, if you need an extra example about the channel check my repository for more information. 
+https://github.com/NicosNicolaou16/ExampleChannelNativeAndroidWithCustomData
 
 NOTE: EXAMPLE ONLY FOR ANDROID
 
@@ -59,9 +62,11 @@ Dart Version: 3.2.3 <br />
 </manifest>
 ```
 
+## Check my article
+https://medium.com/@nicosnicolaou/foreground-service-in-android-9ff18be69ef6 <br />
+
 # References
 https://developer.android.com/about/versions/14/changes/fgs-types-required <br />
 https://stackoverflow.com/questions/14385231/android-broadcastreceiver-auto-run-service-after-reboot-of-device <br />
-
-## Check my article
-https://medium.com/@nicosnicolaou/foreground-service-in-android-9ff18be69ef6 <br />
+https://medium.com/@shreebhagwat94/flutter-platform-channel-46578d21e69 <br />
+https://blog.devgenius.io/use-flutter-screens-in-native-android-app-share-data-among-them-d97d670807a6 <br />
