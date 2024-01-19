@@ -1,16 +1,67 @@
-# sample_foreground_service_flutter
+# Sample Foreground Service Flutter
 
-A new Flutter project.
+This sample project shows the setup for the foreground service. The service in this sample project is a foreground service to request location.
+The permission for <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" /> is depend of the foreground service type.
 
-## Getting Started
+NOTE: EXAMPLE ONLY FOR ANDROID
 
-This project is a starting point for a Flutter application.
+## Similar project with (Kotlin Language)
 
-A few resources to get you started if this is your first Flutter project:
+https://github.com/NicosNicolaou16/SampleForegroundService <br />
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Versions
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Flutter SDK version: 3.16.8 <br />
+Dart Version: 3.2.3 <br />
+
+# Manifest Setup
+```xml
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!--Location Permissions-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <!--Foreground Service Permissions-->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+
+    <!--Restart Service After Reboot the Mobile Device-->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application>
+        <!--other code here-->
+
+        <!--Service-->
+        <service
+            android:name=".service.LocationService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+
+        <!--Broadcast Receiver (Optional)-->
+        <receiver
+            android:name=".broadcast_receiver.RestartServiceBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+        <!--other code here-->
+    </application>
+</manifest>
+```
+
+# References
+https://developer.android.com/about/versions/14/changes/fgs-types-required <br />
+https://stackoverflow.com/questions/14385231/android-broadcastreceiver-auto-run-service-after-reboot-of-device <br />
+
+## Check my article
+https://medium.com/@nicosnicolaou/foreground-service-in-android-9ff18be69ef6 <br />
