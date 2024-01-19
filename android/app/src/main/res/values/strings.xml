@@ -1,0 +1,6 @@
+<resources>
+    <string name="starting_service">Starting service…</string>
+    <string name="location_service">Location Service</string>
+    <string name="running_service_to_find_you_location">Running Service to find you location</string>
+    <string name="and">and</string>
+</resources>
