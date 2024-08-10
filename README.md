@@ -14,8 +14,8 @@ https://github.com/NicosNicolaou16/SampleForegroundService <br />
 
 ## Versions
 
-Flutter SDK version: 3.22.3 <br />
-Dart Version: 3.4.4 <br />
+Flutter SDK version: 3.24.0 <br />
+Dart Version: 3.5.0 <br />
 
 # Manifest Setup
 ```xml
