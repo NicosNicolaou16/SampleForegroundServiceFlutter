@@ -8,12 +8,6 @@ The communication between Android Native with Flutter, I used channel (check the
 But, if you need an extra example about the channel check my repository for more information.
 https://github.com/NicosNicolaou16/ExampleChannelNativeAndroidWithCustomData
 
-NOTE: EXAMPLE ONLY FOR ANDROID
-
-## Similar project with (Kotlin Language)
-
-https://github.com/NicosNicolaou16/SampleForegroundService <br />
-
 ## Versions
 
 Flutter SDK version: 3.24.3 <br />
@@ -65,6 +59,11 @@ Dart Version: 3.5.3 <br />
 
 > [!IMPORTANT]  
 > Check my article :point_right: [Foreground Service in Android - Medium](https://medium.com/@nicosnicolaou/foreground-service-in-android-9ff18be69ef6) :point_left: <br />
+
+
+> [!IMPORTANT]
+> NOTE: EXAMPLE ONLY FOR ANDROID
+> Similar project with (Kotlin Language) :point_right: https://github.com/NicosNicolaou16/SampleForegroundService :point_left: <br />
 
 # References
 
