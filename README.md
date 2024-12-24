@@ -1,12 +1,13 @@
 # Sample Foreground Service Flutter
 
-This sample project shows the setup for the foreground service. The service in this sample project
-is a foreground service to request location.
-The permission for <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
-is depend of the foreground service type.
-The communication between Android Native with Flutter, I used channel (check the references).
-But, if you need an extra example about the channel check my repository for more information.
-https://github.com/NicosNicolaou16/ExampleChannelNativeAndroidWithCustomData
+This sample project demonstrates the setup for a foreground service, specifically for requesting
+location data. The permission `<uses-permission android:name="
+android.permission.FOREGROUND_SERVICE_LOCATION" />` depends on the type of foreground service being
+used. <br />
+Communication between Android Native and Flutter is handled via a channel (refer to the
+documentation for more details). If you need additional examples on using channels, please check my
+repository for more information.
+[ExampleChannelNativeAndroidWithCustomData](https://github.com/NicosNicolaou16/ExampleChannelNativeAndroidWithCustomData)
 
 > [!IMPORTANT]
 > NOTE: EXAMPLE ONLY FOR ANDROID <br />
