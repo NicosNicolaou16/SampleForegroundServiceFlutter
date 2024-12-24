@@ -63,7 +63,7 @@ Dart Version: 3.5.3 <br />
 
 > [!IMPORTANT]
 > NOTE: EXAMPLE ONLY FOR ANDROID
-> Similar project with (Kotlin Language) :point_right: https://github.com/NicosNicolaou16/SampleForegroundService :point_left: <br />
+> Similar project with (Kotlin Language) :point_right: [SampleForegroundService](https://github.com/NicosNicolaou16/SampleForegroundService) :point_left: <br />
 
 # References
 
