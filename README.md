@@ -1,24 +1,23 @@
 # Sample Foreground Service Flutter
 
-This sample project shows the setup for the foreground service. The service in this sample project is a foreground service to request location.
-The permission for <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" /> is depend of the foreground service type.
-The communication between Android Native with Flutter, I used channel (check the references). 
-But, if you need an extra example about the channel check my repository for more information. 
-https://github.com/NicosNicolaou16/ExampleChannelNativeAndroidWithCustomData
+This sample project demonstrates the setup for a foreground service, specifically for requesting
+location data. The permission `<uses-permission android:name="
+android.permission.FOREGROUND_SERVICE_LOCATION" />` depends on the type of foreground service being
+used. <br />
+Communication between Android Native and Flutter is handled via a channel (refer to the
+documentation for more details). If you need additional examples on using channels, please check my
+repository for more information.
+[ExampleChannelNativeAndroidWithCustomData](https://github.com/NicosNicolaou16/ExampleChannelNativeAndroidWithCustomData)
 
-NOTE: EXAMPLE ONLY FOR ANDROID
+> [!IMPORTANT]
+> NOTE: EXAMPLE FOR ANDROID ONLY. <br />
 
-## Similar project with (Kotlin Language)
+# Setup
 
-https://github.com/NicosNicolaou16/SampleForegroundService <br />
+## Manifest Setup
 
-## Versions
-
-Flutter SDK version: 3.24.3 <br />
-Dart Version: 3.5.3 <br />
-
-# Manifest Setup
 ```xml
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -41,31 +40,36 @@ Dart Version: 3.5.3 <br />
         <!--other code here-->
 
         <!--Service-->
-        <service
-            android:name=".service.LocationService"
-            android:enabled="true"
-            android:exported="false"
-            android:foregroundServiceType="location" />
+        <service android:name=".service.LocationService" android:enabled="true"
+            android:exported="false" android:foregroundServiceType="location" />
 
         <!--Broadcast Receiver (Optional)-->
-        <receiver
-            android:name=".broadcast_receiver.RestartServiceBroadcastReceiver"
-            android:enabled="true"
-            android:exported="false">
+        <receiver android:name=".broadcast_receiver.RestartServiceBroadcastReceiver"
+            android:enabled="true" android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        
+
         <!--other code here-->
     </application>
 </manifest>
 ```
 
-## Check my article
-https://medium.com/@nicosnicolaou/foreground-service-in-android-9ff18be69ef6 <br />
+> [!IMPORTANT]  
+> Check my article :point_right: [Foreground Service in Android - Medium](https://medium.com/@nicosnicolaou/foreground-service-in-android-9ff18be69ef6) :point_left: <br />
+
+
+> [!IMPORTANT]
+> Similar project with (Kotlin Language) :point_right: [SampleForegroundService](https://github.com/NicosNicolaou16/SampleForegroundService) :point_left: <br />
+
+## Versioning
+
+Flutter SDK version: 3.27.1 <br />
+Dart Version: 3.6.0 <br />
 
 # References
+
 https://developer.android.com/about/versions/14/changes/fgs-types-required <br />
 https://stackoverflow.com/questions/14385231/android-broadcastreceiver-auto-run-service-after-reboot-of-device <br />
 https://medium.com/@shreebhagwat94/flutter-platform-channel-46578d21e69 <br />
