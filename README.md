@@ -8,10 +8,8 @@ The communication between Android Native with Flutter, I used channel (check the
 But, if you need an extra example about the channel check my repository for more information.
 https://github.com/NicosNicolaou16/ExampleChannelNativeAndroidWithCustomData
 
-## Versions
-
-Flutter SDK version: 3.24.3 <br />
-Dart Version: 3.5.3 <br />
+> [!IMPORTANT]
+> NOTE: EXAMPLE ONLY FOR ANDROID <br />
 
 # Setup
 
@@ -62,8 +60,12 @@ Dart Version: 3.5.3 <br />
 
 
 > [!IMPORTANT]
-> NOTE: EXAMPLE ONLY FOR ANDROID <br />
 > Similar project with (Kotlin Language) :point_right: [SampleForegroundService](https://github.com/NicosNicolaou16/SampleForegroundService) :point_left: <br />
+
+## Versioning
+
+Flutter SDK version: 3.24.3 <br />
+Dart Version: 3.5.3 <br />
 
 # References
 
