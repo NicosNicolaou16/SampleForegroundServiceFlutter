@@ -10,7 +10,7 @@ repository for more information.
 [ExampleChannelNativeAndroidWithCustomData](https://github.com/NicosNicolaou16/ExampleChannelNativeAndroidWithCustomData)
 
 > [!IMPORTANT]
-> NOTE: EXAMPLE ONLY FOR ANDROID <br />
+> NOTE: EXAMPLE FOR ANDROID ONLY. <br />
 
 # Setup
 
