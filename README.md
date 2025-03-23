@@ -64,8 +64,8 @@ repository for more information.
 
 ## Versioning
 
-Flutter SDK version: 3.27.1 <br />
-Dart Version: 3.6.0 <br />
+Flutter SDK version: 3.29.2 <br />
+Dart Version: 3.7.0 <br />
 
 # References
 
