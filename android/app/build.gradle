@@ -59,6 +59,12 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+    externalNativeBuild {
+        cmake {
+            version = "3.31.6"
+        }
+    }
 }
 
 flutter {

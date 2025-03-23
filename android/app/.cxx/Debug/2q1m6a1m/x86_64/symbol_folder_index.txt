@@ -1,0 +1,1 @@
+C:\Users\Nicos\Desktop\AndroidProjects\sample_foreground_service_flutter\build\app\intermediates\cxx\Debug\2q1m6a1m\obj\x86_64
