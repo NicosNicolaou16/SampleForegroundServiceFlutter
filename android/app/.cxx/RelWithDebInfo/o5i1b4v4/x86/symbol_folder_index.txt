@@ -1,0 +1,1 @@
+C:\Users\Nicos\Desktop\AndroidProjects\sample_foreground_service_flutter\build\app\intermediates\cxx\RelWithDebInfo\o5i1b4v4\obj\x86

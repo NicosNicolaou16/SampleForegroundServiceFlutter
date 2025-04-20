@@ -1,0 +1,2 @@
+C:/Users/Nicos/Desktop/AndroidProjects/sample_foreground_service_flutter/android/app/.cxx/Debug/e6a2r4k5/x86/CMakeFiles/edit_cache.dir
+C:/Users/Nicos/Desktop/AndroidProjects/sample_foreground_service_flutter/android/app/.cxx/Debug/e6a2r4k5/x86/CMakeFiles/rebuild_cache.dir
