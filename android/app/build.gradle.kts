@@ -1,4 +1,4 @@
-//import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     id("com.android.application")
@@ -17,11 +17,11 @@ android {
         targetCompatibility = JavaVersion.VERSION_21
     }
 
-    /*kotlin {
+    kotlin {
         compilerOptions {
             jvmTarget = JvmTarget.fromTarget("21")
         }
-    }*/
+    }
 
     sourceSets {
         getByName("main") {
