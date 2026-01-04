@@ -69,7 +69,7 @@ Dart Version: 3.10.4 <br />
 
 # References
 
-https://developer.android.com/about/versions/14/changes/fgs-types-required <br />
-https://stackoverflow.com/questions/14385231/android-broadcastreceiver-auto-run-service-after-reboot-of-device <br />
-https://medium.com/@shreebhagwat94/flutter-platform-channel-46578d21e69 <br />
-https://blog.devgenius.io/use-flutter-screens-in-native-android-app-share-data-among-them-d97d670807a6 <br />
+- https://developer.android.com/about/versions/14/changes/fgs-types-required <br />
+- https://stackoverflow.com/questions/14385231/android-broadcastreceiver-auto-run-service-after-reboot-of-device <br />
+- https://medium.com/@shreebhagwat94/flutter-platform-channel-46578d21e69 <br />
+- https://blog.devgenius.io/use-flutter-screens-in-native-android-app-share-data-among-them-d97d670807a6 <br />
