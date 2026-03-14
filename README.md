@@ -86,7 +86,7 @@ Update your `AndroidManifest.xml` to include the necessary permissions and servi
 ## ⭐ Stargazers
 
 If you find this project useful, please give it a star!  
-[Check out the stargazers here](https://github.com/NicosNicolaou16/sample_foreground_service_flutter/stargazers)
+[Check out the stargazers here](https://github.com/NicosNicolaou16/SampleForegroundServiceFlutter/stargazers)
 
 ## 🙏 Support & Contributions
 
