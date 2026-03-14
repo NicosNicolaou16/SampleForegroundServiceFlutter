@@ -65,7 +65,7 @@ flutter {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.17.0")
+    implementation("androidx.core:core-ktx:1.18.0")
     //Android Native Security
     implementation("androidx.security:security-crypto:1.1.0")
 }
