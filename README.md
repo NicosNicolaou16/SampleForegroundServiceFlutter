@@ -83,10 +83,6 @@ Update your `AndroidManifest.xml` to include the necessary permissions and servi
 - **Medium:** [Flutter Platform Channels](https://medium.com/@shreebhagwat94/flutter-platform-channel-46578d21e69)
 - **DevGenius:** [Using Flutter Screens in Native Android](https://blog.devgenius.io/use-flutter-screens-in-native-android-app-share-data-among-them-d97d670807a6)
 
-## 🔗 Related Projects
-
-- **Kotlin Native Version:** [SampleForegroundService](https://github.com/NicosNicolaou16/SampleForegroundService)
-
 ## ⭐ Stargazers
 
 If you find this project useful, please give it a star!  
