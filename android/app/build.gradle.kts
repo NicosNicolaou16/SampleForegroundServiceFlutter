@@ -27,6 +27,11 @@ android {
         getByName("main") {
             java.srcDirs("src/main/kotlin")
         }
+        sourceSets {
+            named("main") {
+                kotlin.setSrcDirs(listOf("src/main/kotlin"))
+            }
+        }
     }
 
     defaultConfig {
@@ -60,7 +65,7 @@ flutter {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.17.0")
+    implementation("androidx.core:core-ktx:1.18.0")
     //Android Native Security
     implementation("androidx.security:security-crypto:1.1.0")
 }
