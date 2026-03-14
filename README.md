@@ -71,10 +71,6 @@ Update your `AndroidManifest.xml` to include the necessary permissions and servi
 </manifest>
 ```
 
-> [!IMPORTANT]
-> Similar project with (Kotlin Language) :point_right: [SampleForegroundService](https://github.com/NicosNicolaou16/SampleForegroundService) :point_left: <br />
-
-
 ## 🔧 Versioning
 
 - **Flutter SDK:** **3.38.5**
