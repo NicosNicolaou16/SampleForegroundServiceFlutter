@@ -1,20 +1,32 @@
 # Sample Foreground Service Flutter
 
-This sample project demonstrates the setup for a foreground service, specifically for requesting
-location data. The permission `<uses-permission android:name="
-android.permission.FOREGROUND_SERVICE_LOCATION" />` depends on the type of foreground service being
-used. <br />
-Communication between Android Native and Flutter is handled via a channel (refer to the
-documentation for more details). If you need additional examples on using channels, please check my
-repository for more information.
-[ExampleChannelNativeAndroidWithCustomData](https://github.com/NicosNicolaou16/ExampleChannelNativeAndroidWithCustomData)
+[![Linktree](https://img.shields.io/badge/linktree-1de9b6?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/nicos_nicolaou)
+[![Static Badge](https://img.shields.io/badge/Site-blue?style=for-the-badge&label=Web)](https://nicosnicolaou16.github.io/)
+[![X](https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white)](https://twitter.com/nicolaou_nicos)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/nicos-nicolaou-a16720aa)
+[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@nicosnicolaou)
+[![Mastodon](https://img.shields.io/badge/-MASTODON-%232B90D9?style=for-the-badge&logo=mastodon&logoColor=white)](https://androiddev.social/@nicolaou_nicos)
+[![Bluesky](https://img.shields.io/badge/Bluesky-0285FF?style=for-the-badge&logo=Bluesky&logoColor=white)](https://bsky.app/profile/nicolaounicos.bsky.social)
+[![Dev.to blog](https://img.shields.io/badge/dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white)](https://dev.to/nicosnicolaou16)
+[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/@nicosnicolaou16)
+[![Static Badge](https://img.shields.io/badge/Developer_Profile-blue?style=for-the-badge&label=Google)](https://g.dev/nicolaou_nicos)
+
+This sample project demonstrates the implementation of an Android Foreground Service in Flutter, specifically for background location tracking. It showcases how to handle platform channels for Native-to-Flutter communication.
 
 > [!IMPORTANT]
-> NOTE: EXAMPLE FOR ANDROID ONLY. <br />
+> Communication between Android Native and Flutter is handled via `MethodChannel`. For more complex data handling, refer to:
+> 👉 **[ExampleChannelNativeAndroidWithCustomData](https://github.com/NicosNicolaou16/ExampleChannelNativeAndroidWithCustomData)**
 
-# Setup
 
-## Manifest Setup
+> [!IMPORTANT]  
+> A detailed step-by-step guide is available on Medium!  
+> 👉 **[Foreground Service in Android](https://medium.com/@nicosnicolaou/foreground-service-in-android-9ff18be69ef6)** 👈
+
+## 🚀 Setup Steps
+
+### 1. Android Manifest Configuration
+
+Update your `AndroidManifest.xml` to include the necessary permissions and service declarations.
 
 ```xml
 
@@ -62,14 +74,28 @@ repository for more information.
 > [!IMPORTANT]
 > Similar project with (Kotlin Language) :point_right: [SampleForegroundService](https://github.com/NicosNicolaou16/SampleForegroundService) :point_left: <br />
 
-## Versioning
 
-Flutter SDK version: 3.38.5 <br />
-Dart Version: 3.10.4 <br />
+## 🔧 Versioning
 
-# References
+- **Flutter SDK:** **3.38.5**
+- **Dart Version:** **3.10.4**
 
-- https://developer.android.com/about/versions/14/changes/fgs-types-required <br />
-- https://stackoverflow.com/questions/14385231/android-broadcastreceiver-auto-run-service-after-reboot-of-device <br />
-- https://medium.com/@shreebhagwat94/flutter-platform-channel-46578d21e69 <br />
-- https://blog.devgenius.io/use-flutter-screens-in-native-android-app-share-data-among-them-d97d670807a6 <br />
+## 📚 References & Tutorials
+
+- **Android Developers:** [Foreground Service Types Required](https://developer.android.com/about/versions/14/changes/fgs-types-required)
+- **StackOverflow:** [Auto-run service after reboot](https://stackoverflow.com/questions/14385231/android-broadcastreceiver-auto-run-service-after-reboot-of-device)
+- **Medium:** [Flutter Platform Channels](https://medium.com/@shreebhagwat94/flutter-platform-channel-46578d21e69)
+- **DevGenius:** [Using Flutter Screens in Native Android](https://blog.devgenius.io/use-flutter-screens-in-native-android-app-share-data-among-them-d97d670807a6)
+
+## 🔗 Related Projects
+
+- **Kotlin Native Version:** [SampleForegroundService](https://github.com/NicosNicolaou16/SampleForegroundService)
+
+## ⭐ Stargazers
+
+If you find this project useful, please give it a star!  
+[Check out the stargazers here](https://github.com/NicosNicolaou16/sample_foreground_service_flutter/stargazers)
+
+## 🙏 Support & Contributions
+
+This project is maintained for the community. Feedback, bug reports, and feature requests are welcome! Feel free to **open an issue** or submit a **pull request**.
