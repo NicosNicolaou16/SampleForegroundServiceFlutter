@@ -22,6 +22,9 @@ This sample project demonstrates the implementation of an Android Foreground Ser
 > A detailed step-by-step guide is available on Medium!  
 > 👉 **[Foreground Service in Android](https://medium.com/@nicosnicolaou/foreground-service-in-android-9ff18be69ef6)** 👈
 
+> [!IMPORTANT]
+> Similar project with (Kotlin Language) :point_right: [SampleForegroundService](https://github.com/NicosNicolaou16/SampleForegroundService) :point_left: <br />
+
 ## 🚀 Setup Steps
 
 ### 1. Android Manifest Configuration
