@@ -73,8 +73,8 @@ Update your `AndroidManifest.xml` to include the necessary permissions and servi
 
 ## 🔧 Versioning
 
-- **Flutter SDK:** **3.38.5**
-- **Dart Version:** **3.10.4**
+- **Flutter SDK:** **3.41.4**
+- **Dart Version:** **3.11.1**
 
 ## 📚 References & Tutorials
 
