@@ -23,9 +23,9 @@ android {
         }
     }
 
-    sourceSets {
-        getByName("main") {
-            java.srcDirs("src/main/kotlin")
+    kotlin {
+        compilerOptions {
+            jvmTarget = JvmTarget.fromTarget("21")
         }
         sourceSets {
             named("main") {
