@@ -16,11 +16,11 @@ class _MyAppState extends State<MyApp> {
   static const String _stopService = "stop_service";
   final MethodChannel _channelMethod = const MethodChannel(_channelName);
 
-  _notifyToStartOrStopServiceInNativeAndroid(String type) async {
+  Future<void> _notifyToStartOrStopServiceInNativeAndroid(String type) async {
     await _channelMethod.invokeMethod(_methodName, type);
   }
 
-  _requestPermissions() async {
+  Future<void> _requestPermissions() async {
     await [
       Permission.location,
       Permission.notification,
