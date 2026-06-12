@@ -8,8 +8,8 @@ plugins {
 
 android {
     namespace = "com.nicos.sample_foreground_service_flutter"
-    buildToolsVersion = "36.0.0"
-    compileSdk = 36
+    buildToolsVersion = "37.0.0"
+    compileSdk = 37
     ndkVersion = "29.0.14206865"
 
     compileOptions {
@@ -23,9 +23,9 @@ android {
         }
     }
 
-    sourceSets {
-        getByName("main") {
-            java.srcDirs("src/main/kotlin")
+    kotlin {
+        compilerOptions {
+            jvmTarget = JvmTarget.fromTarget("21")
         }
         sourceSets {
             named("main") {
@@ -40,7 +40,7 @@ android {
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         minSdk = 29
-        targetSdk = 36
+        targetSdk = 37
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
@@ -65,7 +65,7 @@ flutter {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.18.0")
+    implementation("androidx.core:core-ktx:1.19.0")
     //Android Native Security
     implementation("androidx.security:security-crypto:1.1.0")
 }
