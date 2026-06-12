@@ -8,7 +8,7 @@ plugins {
 
 android {
     namespace = "com.nicos.sample_foreground_service_flutter"
-    buildToolsVersion = "36.0.0"
+    buildToolsVersion = "37.0.0"
     compileSdk = 37
     ndkVersion = "29.0.14206865"
 
