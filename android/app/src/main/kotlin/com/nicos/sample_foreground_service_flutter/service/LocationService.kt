@@ -70,7 +70,10 @@ class LocationService : Service(), LocationListener {
      * Main process for the service - find the background location and print it with Toast Message
      * */
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        if (!checkIfLocationPermissionIsGrande()) return START_NOT_STICKY
+        if (!checkIfLocationPermissionIsGrande()) {
+            stopSelf()
+            return START_NOT_STICKY
+        }
 
         val locationManager = getSystemService(LOCATION_SERVICE) as LocationManager
 
