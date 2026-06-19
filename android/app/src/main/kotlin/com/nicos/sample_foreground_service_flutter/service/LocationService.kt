@@ -51,14 +51,18 @@ class LocationService : Service(), LocationListener {
                 }
             }
             //need core 1.12 and higher and SDK 29 and higher
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            try {
+                // need core 1.12 and higher and SDK 29 and higher
                 ServiceCompat.startForeground(
                     this@LocationService, 1, this.build(),
                     ServiceInfo.FOREGROUND_SERVICE_TYPE_LOCATION
                 )
-            } else {
-                this@LocationService.startForeground(1, this.build())
+            } catch (e: Exception) {
+                // Catch ForegroundServiceStartNotAllowedException on API 31+
+                e.printStackTrace()
+                stopSelf()
             }
+            //this@LocationService.startForeground(1, this.build())
         }
     }
 
