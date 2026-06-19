@@ -1,6 +1,7 @@
 package com.nicos.sample_foreground_service_flutter
 
 import android.content.Intent
+import androidx.core.content.ContextCompat
 import com.nicos.sample_foreground_service_flutter.service.LocationService
 import com.nicos.sampleforegroundservice.utils.secure_share_preferences.SecureSharePreferences
 import io.flutter.embedding.android.FlutterActivity
@@ -24,7 +25,10 @@ class MainActivity : FlutterActivity() {
         MethodChannel(messenger, CHANNEL_NAME).setMethodCallHandler { call, result ->
             when {
                 call.arguments.toString() == START_SERVICE -> {
-                    this.startService(Intent(this, LocationService::class.java))
+                    ContextCompat.startForegroundService(
+                        context,
+                        Intent(this, LocationService::class.java)
+                    )
                     secureSharePreferences.saveBooleanValue(RESTART_SERVICE, true)
                 }
 

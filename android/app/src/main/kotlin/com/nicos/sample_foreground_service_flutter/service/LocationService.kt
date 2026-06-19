@@ -51,14 +51,18 @@ class LocationService : Service(), LocationListener {
                 }
             }
             //need core 1.12 and higher and SDK 29 and higher
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            try {
+                // need core 1.12 and higher and SDK 29 and higher
                 ServiceCompat.startForeground(
                     this@LocationService, 1, this.build(),
                     ServiceInfo.FOREGROUND_SERVICE_TYPE_LOCATION
                 )
-            } else {
-                this@LocationService.startForeground(1, this.build())
+            } catch (e: Exception) {
+                // Catch ForegroundServiceStartNotAllowedException on API 31+
+                e.printStackTrace()
+                stopSelf()
             }
+            //this@LocationService.startForeground(1, this.build())
         }
     }
 
@@ -66,7 +70,10 @@ class LocationService : Service(), LocationListener {
      * Main process for the service - find the background location and print it with Toast Message
      * */
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        if (!checkIfLocationPermissionIsGrande()) return START_NOT_STICKY
+        if (!checkIfLocationPermissionIsGrande()) {
+            stopSelf()
+            return START_NOT_STICKY
+        }
 
         val locationManager = getSystemService(LOCATION_SERVICE) as LocationManager
 
